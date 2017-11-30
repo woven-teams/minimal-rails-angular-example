@@ -1,0 +1,9 @@
+ul.unstyled {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul.unstyled li {
+  border-top: 1px solid #ccc;
+}
