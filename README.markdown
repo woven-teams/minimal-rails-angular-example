@@ -86,3 +86,7 @@ webpack: Compiled successfully.
 You should now be able to hit http://localhost:4200 and see the following:
 
 ![Angular example](./images/angular.png "Angular example")
+
+## Finished
+
+If you were able to see both images above on your local machine, then you have the key dependencies set up correctly. Excellent!
