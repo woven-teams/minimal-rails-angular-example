@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AppService } from './app.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'The Work Sample Example';
+  posts = []
+
+  constructor(
+    private appService: AppService
+  ) {}
+
+  ngOnInit(): void {
+    this.appService.getPosts().subscribe(data => {
+      this.posts = data as any[]
+    })
+  }
 }
